@@ -2,6 +2,7 @@ export default function createTabs() {
   const content = document.getElementById("content");
 
   const nav = document.createElement("nav");
+  nav.classList.add("nav");
 
   const homeBtn = document.createElement("button");
   homeBtn.textContent = "Home";
@@ -15,9 +16,10 @@ export default function createTabs() {
   contactBtn.textContent = "Contact";
   contactBtn.id = "contactBtn";
 
-  nav.appendChild(homeBtn);
-  nav.appendChild(menuBtn);
-  nav.appendChild(contactBtn);
+  nav.append(homeBtn, menuBtn, contactBtn);
 
-  content.appendChild(nav);
+  const main = document.createElement("div");
+  main.id = "main";
+
+  content.append(nav, main);
 }

@@ -1,13 +1,13 @@
+import "./styles.css";
 import createTabs from "./tabs";
 import loadHome from "./home";
 import loadMenu from "./menu";
 import loadContact from "./contact";
 
-const content = document.getElementById("content");
+const main = () => document.getElementById("main");
 
 function clearContent() {
-  content.innerHTML = "";
-  createTabs();
+  main().innerHTML = "";
 }
 
 createTabs();

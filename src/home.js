@@ -1,5 +1,5 @@
 export default function loadHome() {
-  const content = document.getElementById("content");
+  const content = document.getElementById("main");
 
   const container = document.createElement("div");
 
